@@ -1,0 +1,48 @@
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+
+  // Only validate through Stylelint
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss"],
+
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+
+  // Hide some .gitignored crap for a cleaner tree
+  "files.exclude": {
+    "foundry/": true,
+    "node_modules/": true,
+    ".yarn": true,
+    ".typescript-build": true
+  },
+
+  "i18n-ally.localesPaths": ["static/lang", "foundry/lang"],
+  "i18n-ally.keystyle": "nested",
+
+  // Apparently nothing formats Handlebars correctly
+  "html.format.enable": false,
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+
+  "cSpell.words": [
+    "ATLUS",
+    "charname",
+    "flexcol",
+    "flexrow",
+    "fvtt",
+    "ITEMMODELS",
+    "magatama",
+    "Megami",
+    "Prosemirror",
+    "Rulebook",
+    "Tensei",
+    "TRPG",
+    "vite"
+  ]
+}

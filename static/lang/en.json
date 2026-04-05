@@ -1,0 +1,21 @@
+{
+  "DEMO": {
+    "tab": {
+      "main": "Main",
+      "description": "Description"
+    },
+    "sheet": {
+      "tabLabel": "{name} Tab"
+    },
+    "stats": {
+      "body": "Body",
+      "mind": "Mind",
+      "soul": "Soul"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "pc": "PC"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "demo",
+  "title": "FVTT Typescript Template",
+  "description": "Nekohime's custom version",
+  "version": "0.1.0",
+  "compatibility": {
+    "verified": 13
+  },
+
+  "authors": [
+    {
+      "name": "Nekohime Musou",
+      "url": "https://github.com/NekohimeMusou",
+      "discord": "nekohime.musou"
+    }
+  ],
+
+  "esmodules": ["index.js"],
+  "styles": ["index.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+
+  "documentTypes": {
+    "Actor": {
+      "pc": { "htmlFields": ["description"] }
+    }
+  }
+}

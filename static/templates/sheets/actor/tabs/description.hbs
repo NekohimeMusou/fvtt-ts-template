@@ -1,0 +1,19 @@
+<div
+  class="tab description {{tab.cssClass}}"
+  data-group="primary"
+  data-tab="description"
+>
+{{#if isEditable}}
+<prose-mirror
+  name="system.notes"
+  value="{{system.notes}}"
+  editable="{{isEditable}}"
+  button="true"
+  toggled="false"
+>
+  {{{enrichedNotes}}}
+</prose-mirror>
+{{else}}
+{{{enrichedDescription}}}
+{{/if}}
+</div>

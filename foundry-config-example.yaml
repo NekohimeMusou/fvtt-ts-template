@@ -1,0 +1,3 @@
+# Path to the server directory where the executable is, e.g. `/home/username/.fvtt`
+# This is used to create symlinks so i18n-ally can pick up Foundry's built-in localizations.
+installPath: "/path/to/foundry"

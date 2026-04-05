@@ -1,0 +1,13 @@
+<div class="flexcol">
+  {{#each DEMO.stats as |stat|}}
+  <div class="flexrow">
+    <div class="resource-label">{{localize (concat "DEMO.stats." stat)}}</div>
+    <input
+      type="number"
+      name="{{concat "system.stats." stat}}"
+      value="{{lookup ../system.stats stat}}"
+      placeholder="0"
+    />
+  </div>
+  {{/each}}
+</div>
