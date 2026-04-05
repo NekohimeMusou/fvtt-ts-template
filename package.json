@@ -1,5 +1,6 @@
 {
   "name": "fvtt-ts-template",
+  "private": true,
   "type": "module",
   "packageManager": "yarn@4.13.0",
   "scripts": {
