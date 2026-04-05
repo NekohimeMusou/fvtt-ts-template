@@ -17,3 +17,7 @@
 If you're making a system, in order to create a game world for testing, you may need to run the `build` script once, symlink the resulting `dist` folder into your Foundry systems directory, and relaunch the server.
 
 `yarn run typecheck` and `yarn run lint` will check that your Typescript compiles and lint your Typescript and CSS.
+
+## Credits
+
+Based on [LukeAbby's Foundry starter template](https://github.com/LukeAbby/foundry-starter-template) with some help from [The Foundry VTT community wiki](https://foundryvtt.wiki/en/development/api/localization).
