@@ -20,4 +20,4 @@ If you're making a system, in order to create a game world for testing, you may 
 
 ## Credits
 
-Based on [LukeAbby's Foundry starter template](https://github.com/LukeAbby/foundry-starter-template) with some help from [The Foundry VTT community wiki](https://foundryvtt.wiki/en/development/api/localization).
+Based on [LukeAbby's Foundry starter template](https://github.com/LukeAbby/foundry-starter-template) with some help from [The Foundry VTT community wiki](https://foundryvtt.wiki/en/development/api/localization) and CSS stolen from the [Boilerplate system](https://github.com/asacolips-projects/boilerplate).
