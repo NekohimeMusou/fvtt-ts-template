@@ -1,13 +1,23 @@
 import { DEMO } from "../config/types";
-import ApplicationV2 = foundry.applications.api.ApplicationV2;
 import ActorSheetV2 = foundry.applications.sheets.ActorSheetV2;
 import HandlebarsApplicationMixin = foundry.applications.api.HandlebarsApplicationMixin;
 import type DemoActor from "../documents/actor";
 import type { DeepPartial } from "fvtt-types/utils";
+import type {
+  ApplicationRenderContext,
+  ApplicationRenderOptions,
+} from "./types";
+
+interface ActorSheetContext
+  extends ActorSheetV2.RenderContext, ApplicationRenderContext {
+  actor: DemoActor;
+  system: DemoActor["system"];
+  enrichedDescription: string;
+}
 
 export default class DemoPcSheet<
   RenderContext extends ActorSheetContext = ActorSheetContext,
-  RenderOptions extends AppRenderOptions = AppRenderOptions,
+  RenderOptions extends ApplicationRenderOptions = ApplicationRenderOptions,
 > extends HandlebarsApplicationMixin(ActorSheetV2)<RenderContext> {
   /** {@inheritdoc} */
   static override DEFAULT_OPTIONS = {
@@ -83,28 +93,4 @@ export default class DemoPcSheet<
       relativeTo: this.actor,
     });
   }
-}
-
-interface _RenderContext
-  extends
-    ApplicationV2.RenderContext,
-    HandlebarsApplicationMixin.RenderContext {
-  DEMO: typeof DEMO;
-  user: User;
-
-  isLimited: boolean;
-  isEditable: boolean;
-  tab?: ApplicationV2.Tab;
-  primaryTabs?: Record<string, ApplicationV2.Tab>;
-}
-
-interface AppRenderOptions
-  extends
-    ApplicationV2.RenderOptions,
-    HandlebarsApplicationMixin.RenderOptions {}
-
-interface ActorSheetContext extends ActorSheetV2.RenderContext, _RenderContext {
-  actor: DemoActor;
-  system: DemoActor["system"];
-  enrichedDescription: string;
 }
